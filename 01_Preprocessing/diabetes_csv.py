@@ -19,7 +19,7 @@ data = pd.read_csv('diabetes_dataset.csv')
 # Criando X and y par ao algorítmo de aprendizagem de máquina.\
 print(' - Criando X e y para o algoritmo de aprendizagem a partir do arquivo diabetes_dataset')
 # Caso queira modificar as colunas consideradas basta algera o array a seguir.
-feature_cols = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness', 
+feature_cols = ['Pregnancies', 'Glucose', 'BloodPressure', 'SkinThickness',
                 'Insulin', 'BMI', 'DiabetesPedigreeFunction', 'Age']
 X = data[feature_cols]
 y = data.Outcome
@@ -41,7 +41,7 @@ URL = "http://aydanomachado.com/mlclass/01_Preprocessing.php"
 DEV_KEY = "COLOCAR_SUA_KEY_AQUI"
 
 # json para ser enviado para o servidor
-data = {'dev_key':DEV_KEY,
+data = {'dev_key':'MDR',
         'predictions':pd.Series(y_pred).to_json(orient='values')}
 
 # Enviando requisição e salvando o objeto resposta
